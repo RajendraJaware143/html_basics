@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title> Aaj kal tere mere pyar ke charche</title>
+</head>
+<body>
+	<p id = "demo"></p>
+	<button onclick = "myName()">Clicked</button>
+	<script>
+		function myName() {
+			var text;
+			if(confirm("Press A button"))
+			{
+				text="It is ok";
+
+			}
+			else {
+				text = "It is not okay"
+			}
+			document.getElementById("demo").innerHTML = text;
+		}
+	</script>
+		
+	</body>
+	</html>
