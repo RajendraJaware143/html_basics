@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2> Javascript array sort</h2>
+<button onclick="myclick()"> Sort </button>
+<p id="demo"></p>
+<script>
+var cars =[
+{ type:"Rajendra",Year:1993 },
+{ type:"Somnath",Year:1991  },
+{ type:"Vijay",Year:1995 } ]
+
+displayCars();
+function myclick()
+{
+	cars.sort(function(a,b){ return a.Year - b.Year});
+	displayCars();
+
+}
+
+function displayCars()
+{
+	document.getElementById("demo").innerHTML=
+	cars[0].type + " " + cars[0].Year + "<br>" +
+	cars[1].type + " " + cars[1].Year + "<br>" +
+	cars[2].type + " " + cars[2].Year ;
+}
+</script>
+</body>
+</html>
+
+}
