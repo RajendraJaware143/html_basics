@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Enter a number and click OK:</p>
+<input id = "id1" type = "number" min = "100" required>
+<button onclick = "myFunction()">Click</button>
+<p id = "demo"></p>
+
+<script>
+	function myFunction() {
+		var x = document.getElementById("id1");
+		if(x.validity.rangeUnderflow) {
+			text = "Your number is very small";
+		}
+		else {
+			text = "Valid Input";
+		}
+		document.getElementById("demo").innerHTML = text;
+	}
+
+
+</script>
+</body>
+</html>
